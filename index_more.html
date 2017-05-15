@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no" />
+		<title> 欢迎使用BD点餐系统</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<link href="css/index_more.css" rel="stylesheet">
+		<script src="js/html5shiv.min.js"></script>
+	</head>
+	<style>
+		html,
+		body {
+			background: #f2f2f2;
+		}
+	</style>
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 order_nav">
+					<img src="img/back.png" alt="" /> 欢迎使用BD点餐系统
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 no_wb">
+					<div class="head_area">
+						<div class="head_area_title">
+							美味家园
+						</div>
+						<div class="head_area_list">
+							<div class="list_left">
+								<span class='list_one'>餐台名称:</span>
+								<span class="list_two">201</span><br />
+								<span class="list_one">座位数量:</span>
+								<span class="list_two">200</span><br />
+								<span class="list_one">菜品数量:</span>
+								<span class="list_two">1</span>
+							</div>
+							<div class="list_right">
+								<span class="list_one">下单短码:</span>
+								<span class="list_two">0008</span><br />
+								<span class="list_one">就餐人数:</span>
+								<span class="list_two status_a">1</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="colo-xs-12 goods_area">
+					<div class="goods_list">
+						<img class="goods_list_img" src="img/lalatu.png" alt="" />
+						<div class="goods_list_info">
+							<span class="name_a">椒盐皮皮虾</span>
+							<span class="name_b">（重辣）</span><br />
+							<span class="name_c">消费送一张折扣券</span>
+
+						</div>
+						<div class="goods_list_right">
+							<span class="list_prize">2元/份</span><br />
+							<span class="list_num">1</span>
+						</div>
+					</div>
+					<div class="goods_list">
+						<img class="goods_list_img" src="img/lalatu.png" alt="" />
+						<div class="goods_list_info">
+							<span class="name_a">椒盐皮皮虾</span>
+							<span class="name_b">（重辣）</span><br />
+							<span class="name_c">消费送一张折扣券</span>
+
+						</div>
+						<div class="goods_list_right">
+							<span class="list_prize">2元/份</span><br />
+							<span class="list_num">1</span>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="row nav_btm">
+				
+				<div class="col-xs-6 no_wb money_left">
+					实付金额：<span>￥242.00元</span>
+				</div>
+				<div class="col-xs-3 no_wb money_a">
+					加菜
+				</div>
+				<div class="col-xs-3 no_wb money_right">
+					结账
+				</div>
+
+			</div>
+
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<script src="js/jquery-1.11.3.min.js "></script>
+		<script src="js/bootstrap.js "></script>
+		<script>
+			//各个屏幕大小适配
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+
+	</body>
+
+</html>
